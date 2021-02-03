@@ -1,0 +1,59 @@
+@import url("https://use.typekit.net/ffg6qpu.css");
+body {
+    font-family:"myriad-pro";
+    background-color: #f7f7f7;
+    color: #22b573;
+    text-align: center;
+    font-size:xx-large;
+    line-height:62px;
+}
+h1{text-align: center;}
+
+.button {
+    font-family:"myriad-pro";
+    background-color: #22b573;
+    color: #f7f7f7;
+    text-align: center;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: xx-large;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+}
+.button:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  input[type=text] {
+    padding: 0;
+    height: 30px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, .15);
+    background-color: white;
+    font-size: xx-large;
+    font-family:"myriad-pro";
+    color: #22b573;
+  }
+  .button1 {
+    font-family:"myriad-pro";
+    background-color: #22b573;
+    color: #f7f7f7;
+    text-align: center;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: xx-large;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+}
+.button1:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: rgb(212, 0, 0);
+  }

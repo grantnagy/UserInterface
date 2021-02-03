@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Local Realty: Mortgage Payment Calculator</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+    <img src="image.png">
+    <div class="center">
+        House Price $ <input type="text" id="houseprice" name="bar" autofocus> <br>
+        Down Payment $ <input type="text" id="dp" name="bar"> <br>
+        Interest Rate (Yearly) <input type="text" id="Interest" name="bar"> % <br>
+        Term (Years of Payment) <input type="text" id="term" name="bar"> <br><br>
+        <input type="button" value="Calculate" class="button" onclick="calculate()"/> 
+        <input type="button" value="Clear" class="button" onclick="clearfields()"/>
+        <input type="button" value="Quit" class="button1" onclick="quitApplication()"/> <br>
+        <span id="result">
+        <p id="alert"></p>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
