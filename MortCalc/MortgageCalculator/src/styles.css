@@ -1,17 +1,25 @@
 @import url("https://use.typekit.net/ffg6qpu.css");
 body {
     font-family:"myriad-pro";
-    background-color: #f7f7f7;
-    color: #22b573;
+    background-color: #ffffff;
+    color: #3A3C42;
     text-align: center;
     font-size:xx-large;
     line-height:62px;
 }
+h3{display: inline;
+font-size: medium;}
 h1{text-align: center;}
+h2{color:#9CCD62}
+
+a{text-decoration: none;
+color: #9b9b9b;}
+a.one:hover{color: #9CCD62}
+p{margin: auto;}
 
 .button {
     font-family:"myriad-pro";
-    background-color: #22b573;
+    background-color: #9CCD62;
     color: #f7f7f7;
     text-align: center;
     padding: 15px 32px;
@@ -20,13 +28,29 @@ h1{text-align: center;}
     margin: 4px 2px;
     cursor: pointer;
     border: none;
-}
-.button:hover {
+  }
+  .button:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
   }
-  input[type=text] {
+  
+  select{
+    display: inline-block;
+    padding: 0;
+    height: 40px;
+    width: 290px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, .15);
+    background-color: white;
+    font-size: xx-large;
+    font-family:"myriad-pro";
+    color: #9CCD62;
+  }
+input[type=text] {
     padding: 0;
     height: 30px;
     position: relative;
@@ -37,16 +61,19 @@ h1{text-align: center;}
     background-color: white;
     font-size: xx-large;
     font-family:"myriad-pro";
-    color: #22b573;
+    color: #9CCD62;
   }
   .button1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
     font-family:"myriad-pro";
-    background-color: #22b573;
+    background-color: #e45353;
     color: #f7f7f7;
     text-align: center;
-    padding: 15px 32px;
+    padding: 5px 10px;
     display: inline-block;
-    font-size: xx-large;
+    font-size: small;
     margin: 4px 2px;
     cursor: pointer;
     border: none;
@@ -56,4 +83,47 @@ h1{text-align: center;}
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     background-color: rgb(212, 0, 0);
+  }
+  .button3 {
+    font-family:"myriad-pro";
+    background-color: #a0a0a0;
+    color: #f7f7f7;
+    text-align: center;
+    padding: 8px 20px;
+    display: inline-block;
+    font-size: small;
+    cursor: pointer;
+    border: none;
+}
+.button3:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: rgb(212, 0, 0);
+  }
+
+  /* nav */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    font-family:"myriad-pro";
+    color: #9CCD62;
+    display: inline-block;
+    text-align: center;
+    font-size: medium;
+    padding: 0px 18px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
   }
