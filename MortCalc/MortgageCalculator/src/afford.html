@@ -16,8 +16,8 @@
 <img src="image.png">
 <div class="center">
     <h2>What Can I Afford?</h2>
-    Monthly Salary $ <input type="text" id="houseprice" name="bar" autofocus> <br>
-    Total Monthly Bills $ <input type="text" id="dp" name="bar"> <br>
+    Monthly Salary $ <input type="text" id="salary" name="bar" autofocus> <br>
+    Total Monthly Bills $ <input type="text" id="bills" name="bar"> <br>
     Interest Rate
     <input type="text" id="Interest" list="rate">
     <datalist id="rate">
@@ -33,6 +33,8 @@
     </datalist>
     <h3> Yearly</h3>
     <br>
+    Down Payment $ <input type="text" id="dp" name="bar">
+    <br>
     Term
     <span class="select">
         <select id="term">
@@ -47,7 +49,7 @@
     <span id="result">
         <p id="alert"></p>
 </div>
-<script src="index.js"></script>
+<script src="afford.js"></script>
 </body>
 
 </html>
