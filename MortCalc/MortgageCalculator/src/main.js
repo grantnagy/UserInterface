@@ -9,16 +9,17 @@ if (require('electron-squirrel-startup')) { // eslint-disable-line global-requir
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 900,
-    height: 1000,
-    icon: path.join(__dirname, 'mortgagecalc.ico'),
+    width: 1080,
+    height: 1080,
+    frame: false,
+    icon: path.join(__dirname, 'image.ico'),
     webPreferences: {
       nodeIntegration: false
     }
   });
 
   // and load the index.html of the app.
-  mainWindow.loadFile(path.join(__dirname, 'index.html'));
+  mainWindow.loadFile(path.join(__dirname, 'home.html'));
 
 };
 

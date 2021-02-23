@@ -1,8 +1,8 @@
 {
-  "name": "mortgagecalculator",
-  "productName": "MortgageCalculator",
-  "version": "1.0.0",
-  "description": "Mortgage Calculator by Grant",
+  "name": "mortgagetools-gn",
+  "productName": "MortgageToolsGN",
+  "version": "1.2.0",
+  "description": "Mortgage Tools by Grant",
   "main": "src/main.js",
   "scripts": {
     "start": "electron-forge start",
@@ -19,10 +19,13 @@
   "license": "MIT",
   "config": {
     "forge": {
+      "electronPackagerConfig": {
+        "icon": "src/image.ico"
+      },
       "packagerConfig": {},
       "makers": [
         {
-          "icon": "src/mortgagecalc.ico",
+          "icon": "src/image.ico",
           "name": "@electron-forge/maker-squirrel",
           "config": {
             "name": "mortgagecalculator"

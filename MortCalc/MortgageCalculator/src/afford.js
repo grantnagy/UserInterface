@@ -3,52 +3,62 @@ const $ = selector => document.querySelector(selector);
 
 
 function calculate() {
-    var r = 0, AF;
+    var ans;
 
-    let p = document.getElementById("houseprice").value;
-    let dp = document.getElementById("dp").value;
-    let i = document.getElementById("Interest").value;
-    let t = document.getElementById("term").value;
+    let salary = document.getElementById("salary").value;
+    let bills = document.getElementById("bills").value;
+    let Interest = document.getElementById("Interest").value;
+    let DownPayment = document.getElementById("dp").value;
+    let term = document.getElementById("term").value;
+    let n = term * 12;
+    let i = (Interest/100)/12;
+    let r = .29*salary;
+    var inny = (1+i)**n;    
 
-    let n = t * 12;
-    i = (i/100)/12;
-    AF = p - dp;
-    let c = (1+i)**n;
+    ans = ((r*inny)-1)/(i*inny);
 
-    r = (AF*i*c)/(c-1);
-
+    ans = ans.toFixed(2);
     r = r.toFixed(2);
-    if (isNaN(r)) document.getElementById("result").innerHTML = "";
-    else if(r < 0) alert("invalid inputs");
+
+    if (isNaN(ans)) document.getElementById("result").innerHTML = "";
+    else if (ans < 0) alert("invalid inputs");
     else {
-    var result = r.toString();
-    document.getElementById("result").innerHTML = "Monthly Payment: $" + result;
+        var result = ans.toString();
+        document.getElementById("result").innerHTML = "House Price: $ " + result;
+        var monthly = r.toString();
+        document.getElementById("monthly").innerHTML = "Monthly Rent: $ " + monthly;
     }
 
-    if (isNaN(p))
-        alert("Please enter a valid number.");
+    if (isNaN(salary))
+        alert("Please enter a valid salary.");
 
-    if (isNaN(dp))
-        alert("Please enter a valid number.");
+    if (isNaN(bills))
+        alert("Please enter a valid number for bills.");
 
-    if (isNaN(i))
-        alert("Please enter a valid percentage.");
+    if (isNaN(Interest))
+        alert("Please enter a valid interest rate");
 
-    if (isNaN(t) || term > 100)
+    if (isNaN(DownPayment))
+        alert("Please enter a valid down payment.");
+
+    if (isNaN(term) || term > 100)
         alert("Please enter a term in years.");
 
 }
-function clearfields(){
-    document.getElementById("houseprice").value = "";
+function clearfields() {
+    document.getElementById("salary").value = "";
+    document.getElementById("bills").value = "";
+    document.getElementById("Interest").value = "";
     document.getElementById("dp").value = "";
-    document.getElementById("Interest").value = "";   
     document.getElementById("result").innerHTML = "";
+    document.getElementById("monthly").innerHTML = "";
+
 }
 
-  
-  const electron = require('electron');
-  const remote = electron.remote;
-  
-  function quitApplication(){
-     window.close();
-  }
+
+const electron = require('electron');
+const remote = electron.remote;
+
+function quitApplication() {
+    window.close();
+}

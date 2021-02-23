@@ -13,11 +13,11 @@
     <li><a href="afford.html">What Can I Afford?</a></li>
     <input type="button" value="✖" class="button1" onclick="quitApplication()" />
 </ul>
-<img src="image.png">
+<object data="image.svg" width=75%></object>
 <div class="center">
     <h2>What Can I Afford?</h2>
-    Monthly Salary $ <input type="text" id="salary" name="bar" autofocus> <br>
-    Total Monthly Bills $ <input type="text" id="bills" name="bar"> <br>
+    Monthly Salary $ <input type="text" id="salary" autofocus> <br>
+    Total Monthly Bills $ <input type="text" id="bills"> <br>
     Interest Rate
     <input type="text" id="Interest" list="rate">
     <datalist id="rate">
@@ -33,7 +33,7 @@
     </datalist>
     <h3> Yearly</h3>
     <br>
-    Down Payment $ <input type="text" id="dp" name="bar">
+    Down Payment $ <input type="text" id="dp">
     <br>
     Term
     <span class="select">
@@ -44,9 +44,11 @@
             <option value="10">10 Years</option>
         </select>
     </span><br>
-    <input type="button" value="Clear" class="button3" onclick="clearfields()" /><br>
     <input type="button" value="Calculate" class="button" onclick="calculate()" /> <br>
-    <span id="result">
+    <input type="button" value="Clear" class="button3" onclick="clearfields()" /><br>
+    <span id="monthly"></span>
+    <br>
+    <span id="result"></span>
         <p id="alert"></p>
 </div>
 <script src="afford.js"></script>
